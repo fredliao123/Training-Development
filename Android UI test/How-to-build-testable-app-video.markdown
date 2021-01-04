@@ -18,5 +18,15 @@ fun createTask() {
 ```
 
 ### Integration tests:
-Tests all the units collaborate as planned. The difference between E2E test and integration test is that E2E test can be across screens testing user flow. But integration test should focus on one screen.
-Because integration tests is more foucsed on collaboration
+Tests all the units collaborate as planned. The difference between E2E test and integration test is that E2E test can be across screens testing user flow. But integration test should focus on one screen or even a repo.
+Because integration tests is more foucsed on collaboration, we can use test doubles to mock some of the dependencies in tests. Some of the test doubles are:
+
+- Dummy: just to satisfy dependency(Mock)
+- Stub: has one scenario(Mock)
+- Fake: accurate but lightweight
+- Real object: like a value object
+
+### Unit tests:
+The scope should be as small as possible. 
+
+Don't write change detector tests by using `verify`. It's testing implementation instead of behavior
