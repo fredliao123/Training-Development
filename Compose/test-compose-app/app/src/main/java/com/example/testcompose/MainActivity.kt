@@ -13,13 +13,8 @@ import com.example.testcompose.ui.TestComposeTheme
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            TestComposeTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(color = MaterialTheme.colors.background) {
-                    Greeting("Android")
-                }
-            }
+        setContent { 
+            Greeting(name = "Fred")
         }
     }
 }
